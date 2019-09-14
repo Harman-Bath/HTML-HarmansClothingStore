@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+author @ Harman Bath
+
+-->
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="styleA3/A3Style.css"/> 
+        <script type ="text/JavaScript" src ="script/A3Script.js"></script>
+    </head>
+    <body>
+        <form name = "frmFirst" >
+            <fieldset id = "contact"> 
+                <legend> Contact Information </legend>
+                <label for="firstName"> First Name: </label>
+                <input type="text" name ="firstName" placeholder="Harman" 
+                       size="30" maxLength="40" id="firstName" required><br><br>
+                <label for="lastName"> Last Name: </label> 
+                <input type="text" name ="lastName" placeholder="Bath" 
+                       size="30" maxLength="40" id="lastName" required><br><br>
+                <label for="email"> Email Address: </label>
+                <input type="text" name ="email" 
+                       placeholder="bathharm@sheridancollege.ca" size="30" 
+                       maxLength="40" id ="email" required><br><br>
+                <figure> <img src="imagesa3/batman.jpg" height="100" width="100"
+                          alt="Image not found"/> </figure>
+            </fieldset>
+            <fieldset id ="products">
+                <legend> Choose Your Products </legend> 
+                <input type="checkbox" name="product" value="T-Shirt"> T-Shirt 
+                <br>
+                <input type="checkbox" name="product" value="Pants"> Pants <br>
+                <input type="checkbox" name="product" value="Sweater"> Sweater 
+                <br>
+                <input type="checkbox" name="product" value="Socks"> Socks <br>
+            </fieldset>
+            <fieldset id ="payment"> 
+                <legend> Choose Your Payment Method </legend>
+                <input list ="pay" name="pay">
+                <datalist id="pay">                    
+                <option value="Credit Card">
+                <option value="Debit Card">
+                <option value="Check">
+                </datalist>
+            </fieldset>
+            <fieldset id ="shipment">
+                <legend> Choose Your Shipment Method </legend>
+                <input type="radio" name="shipmentm" value="Air"> Air <br>
+                <input type="radio" name="shipmentm" value="Truck"> 
+                Truck <br>
+                <input type="radio" name="shipmentm" value="Mail" checked> 
+                Mail <br>
+            </fieldset>
+            <textarea id="order" name="txtOrder" rows="10" cols="90">
+            </textarea>
+            <input type ="submit" id="btnOrder" value="Submit"
+                   onclick="displayOrder()">
+            <input type ="reset" value="Reset" id="btnReset">
+        </form>
+   </body>
+</html>

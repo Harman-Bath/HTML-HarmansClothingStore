@@ -1,0 +1,40 @@
+body{
+    background-color: lightblue; 
+}
+
+form{
+    width: 50vw;
+}
+
+fieldset{
+    border-color: orangered;    
+}
+
+#order{
+    position: absolute; 
+    top: 95vh; 
+}
+
+#btnOrder{
+    position: absolute;
+    top: 120vh; 
+   
+}
+
+#btnReset{
+    position: absolute; 
+    top: 125vh; 
+}
+
+figure{
+    position: abosolute; 
+    left: 50vw; 
+}
+
+
+
+
+
+
+
+
